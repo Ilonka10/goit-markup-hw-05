@@ -67,7 +67,9 @@
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button type="button" class="button-hero">Замовити послугу</button>
+          <button class="button-hero" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <!-- Benefits section -->
@@ -141,6 +143,9 @@
                 width="370"
                 height="294"
               />
+              <div class="overlay-section">
+                <p class="ovarlay-title">Десктопні додатки</p>
+              </div>
             </li>
             <li class="about-project">
               <img
@@ -149,6 +154,9 @@
                 width="370"
                 height="294"
               />
+              <div class="overlay-section">
+                <p class="ovarlay-title">Мобільні додатки</p>
+              </div>
             </li>
             <li class="about-project">
               <img
@@ -157,6 +165,9 @@
                 width="370"
                 height="294"
               />
+              <div class="overlay-section">
+                <p class="ovarlay-title">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -612,5 +623,16 @@
         </div>
       </div>
     </footer>
+    <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" data-modal-close>
+          <svg class="modal-icon" width="18" height="18">
+            <use href="./img/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
